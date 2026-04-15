@@ -3,27 +3,36 @@ title = "About"
 template = "page.html"
 +++
 
-I am a PhD student at **Stockholm University** in the **Department of Chemistry**.
+I am a PhD researcher at **Stockholm University** working at the intersection of **molecular simulation**, **machine learning**, and **scientific software**.
 
-My research focuses on methods for building interaction potentials for **coarse-grained molecular models**. The goal is to make molecular simulations more efficient while still preserving the physical behavior that matters at larger scales.
+My current work focuses on **coarse-grained molecular models** and **machine-learned interaction potentials**. I am interested in methods that stay physically meaningful while also being practical to train, evaluate, and use in real computational workflows.
 
-Coarse-graining is important because it helps push simulations toward larger systems and longer timescales than are practical in full atomistic resolution. I am especially interested in the combination of:
+Before moving to Stockholm University, I studied physics at **Saint Petersburg State University**, where I worked on molecular dynamics, transport properties, and trajectory analysis. Over time, my work has grown into a broader interest in building reliable computational tools for research: models, analysis pipelines, and supporting software that are not only useful for one project, but also reproducible, extensible, and easier to maintain.
 
-- molecular simulation
-- machine learning
-- physically motivated modeling
-- scientific programming
+## Selected experience
 
-## Background
+- **PhD Researcher, Stockholm University** *(2022-present)*  
+  Working on machine learning methods for molecular modeling, including model development, training strategies, and performance-oriented scientific programming.
 
-- BSc and MSc in Physics, Saint Petersburg State University
+- **Developer, Nabi Project** *(2023-present)*  
+  Contributing to real-time analytics tooling and a Telegram-based product for financial market data, with a focus on applied data analysis and production-oriented Python development.
 
-## Research interests
+- **Researcher, Saint Petersburg State University / Fock Institute** *(2017-2022)*  
+  Developed utilities for molecular dynamics trajectory analysis and worked on problems involving diffusion, viscosity, structural properties, and time-series analysis in simulated systems.
 
-- Molecular Simulations (MD, MC)
-- Neural Networks
-- Physics
-- Applied Math
-- Programming
+## Education
 
-Outside of formal publications, I am also interested in practical research software: tools that help make simulation workflows more reproducible, extensible, and easier to test.
+- **Stockholm University**  
+  PhD studies in computational chemistry
+
+- **Saint Petersburg State University**  
+  MSc in Physics, with distinction  
+  BSc in Physics
+
+## Interests
+
+- coarse-grained molecular modeling
+- molecular dynamics and statistical physics
+- machine-learned potentials
+- scientific software and numerical methods
+- data analysis and time-series modeling

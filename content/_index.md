@@ -3,11 +3,11 @@ title = "Home"
 template = "index.html"
 +++
 
-Hi, I'm **Maksim Posysoev**. I am a PhD student at Stockholm University working on coarse-grained molecular models, machine-learned potentials, and scientific computing for molecular simulation.
+Hi, I'm **Maksim Posysoev**. I am a PhD researcher at Stockholm University working on coarse-grained molecular modeling, machine-learned interaction potentials, and scientific software for simulation and data analysis.
 
-This site is a compact overview of my work. Here you can find a short research summary, links to publications and software, and occasional blog posts about ideas, tools, and experiments.
+This site is a concise overview of my research and technical work. It brings together a short professional background, publications, software projects, and occasional notes on models, code, and computational methods.
 
-- Learn more [about me](/about/)
+- Learn more [about my background and work](/about/)
 - Browse [publications](/publications/)
-- See [software and code](/software/)
+- Explore [software and code](/software/)
 - Get in touch on the [contact page](/contact/)
