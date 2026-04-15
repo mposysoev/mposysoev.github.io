@@ -10,11 +10,10 @@ The best entry point is my GitHub profile:
 
 - [github.com/mposysoev](https://github.com/mposysoev)
 
-## What you can expect here
+## Selected software
 
-- simulation utilities
-- model development code
-- data-processing scripts
-- small experimental projects and prototypes
+- [magic-3](https://bitbucket.org/magic-su/magic-3/src/master/)  
+  Mature software for building pair coarse-grained potentials for arbitrary systems. I contributed to this project, but I was not its founder or lead developer.
 
-Over time, I will add selected repositories here with short descriptions and context.
+- [ML-IMC](https://github.com/mikhail-a-ivanov/ML-IMC)  
+  A neural-network version of the MAGIC-style IMC workflow. I was one of the two main developers of this code.
