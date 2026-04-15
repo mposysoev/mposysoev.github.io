@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: read
   pages: write
@@ -27,9 +30,11 @@ jobs:
 
       - name: Install Zola
         run: |
+          set -euxo pipefail
           ZOLA_VERSION=0.22.1
-          curl -sL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
-            | sudo tar -xz -C /usr/local/bin
+          curl -fL -o zola.tar.gz "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          tar -xzf zola.tar.gz
+          sudo mv zola /usr/local/bin/zola
 
       - name: Show Zola version
         run: zola --version
