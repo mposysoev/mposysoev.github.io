@@ -21,6 +21,13 @@ render_emoji = false
 smart_punctuation = true
 bottom_footnotes = true
 
+[link_checker]
+# Some providers block GitHub Actions/CI bots with 403 even though the links are valid in a browser.
+skip_prefixes = [
+    "https://scholar.google.com/",
+    "https://doi.org/10.1021/acs.jctc.3c00516",
+]
+
 [extra]
 author = "Maksim Posysoev"
 # Social / contact links shown in footer and contact page
