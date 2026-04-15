@@ -1,0 +1,30 @@
+base_url = "https://mposysoev.github.io"
+title = "Maksim Posysoev"
+description = "Personal website of Maksim Posysoev — research, software, notes."
+author = "Maksim Posysoev"
+default_language = "en"
+compile_sass = false
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+output_dir = "public"
+
+taxonomies = [
+    { name = "tags", feed = true },
+]
+
+[markdown]
+[markdown.highlighting]
+theme = "github-light"
+style = "inline"
+render_emoji = false
+smart_punctuation = true
+bottom_footnotes = true
+
+[extra]
+author = "Maksim Posysoev"
+# Social / contact links shown in footer and contact page
+email = "maxim.posysoev@gmail.com"
+github = "https://github.com/mposysoev"
+orcid = "https://orcid.org/0009-0008-0991-549X"
+scholar = "https://scholar.google.com/citations?user=wB8CWGsAAAAJ&hl=en&oi=ao"

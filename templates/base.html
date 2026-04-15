@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ config.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+<link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}">
+{% block head_extra %}{% endblock %}
+<script>
+(function(){
+  var t=localStorage.getItem('theme');
+  if(t){document.documentElement.setAttribute('data-theme',t);}
+})();
+</script>
+</head>
+<body>
+<header class="site-header">
+  <nav>
+    <a class="site-title" href="{{ get_url(path='/', trailing_slash=true) | safe }}">{{ config.extra.author }}</a>
+    <ul class="nav-links">
+      <li><a href="{{ get_url(path='@/about.md') | safe }}">about</a></li>
+      <li><a href="{{ get_url(path='@/publications.md') | safe }}">publications</a></li>
+      <li><a href="{{ get_url(path='@/software.md') | safe }}">software</a></li>
+      <li><a href="{{ get_url(path='@/blog/_index.md') | safe }}">blog</a></li>
+      <li><a href="{{ get_url(path='@/contact.md') | safe }}">contact</a></li>
+      <li><button id="theme-toggle" aria-label="Toggle theme" type="button">◐</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <p>&copy; {{ now() | date(format='%Y') }} {{ config.extra.author }} · built with <a href="https://www.getzola.org/">Zola</a></p>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('theme-toggle');
+  btn.addEventListener('click',function(){
+    var cur=document.documentElement.getAttribute('data-theme');
+    var next=(cur==='dark')?'light':'dark';
+    document.documentElement.setAttribute('data-theme',next);
+    localStorage.setItem('theme',next);
+  });
+})();
+</script>
+</body>
+</html>
